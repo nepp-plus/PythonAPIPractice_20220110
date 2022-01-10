@@ -38,6 +38,7 @@
         android:text="닉네임" />
 
     <EditText
+        android:id="@+id/edtNickname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="자유 입력"
