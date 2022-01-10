@@ -18,7 +18,7 @@ class ServerAPI {
 
 //        이 { } 안에 적는 변수 / 함수들은 => ServerAPI.변수/함수  로 활용 가능.
 
-        private val BASE_URL = "https://api.gudoc.in"  // 기본 보안 처리는 되어있는 서버. => 이 클래스 내부에서만 사용할예정.
+        private val BASE_URL = "http://192.168.0.82:5000"  // 우리 컴퓨터 안에서 돌아가는 파이썬 Flask 서버
         private var retrofit : Retrofit? = null // 서버 연결 전담 변수. => 기본적으로는 아직 안만든상태 (null)
 
 //        retrofit 변수에 환경설정 + 객체화 => 가져다 쓸 수 있게 하는 기능 (함수)
