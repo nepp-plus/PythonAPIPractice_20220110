@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import com.neppplus.pythonapipractice_20220110.models.BasicResponse
 import kotlinx.android.synthetic.main.activity_sign_up.*
+import org.json.JSONObject
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -41,6 +42,11 @@ class SignUpActivity : BaseActivity() {
                         ).show()
                     }
                     else {
+//                        서버가 400 등의 실패 코드를 준 경우.
+                        val jsonObj = JSONObject( response.errorBody()!!.string() )
+
+                        val message = jsonObj.getString("message")
+                        Toast.makeText(mContext, message, Toast.LENGTH_SHORT).show()
 
                     }
 
