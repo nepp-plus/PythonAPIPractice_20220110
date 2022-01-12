@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="연락처이름"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DFDFDF"
+        android:layout_marginVertical="10dp" />
+
+    <TextView
+        android:id="@+id/txtPhoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="폰번 나올 자리"
+        android:textSize="17sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DFDFDF"
+        android:layout_marginVertical="10dp" />
+
+    <TextView
+        android:id="@+id/txtMemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="메모 자리" />
+
+</LinearLayout>
