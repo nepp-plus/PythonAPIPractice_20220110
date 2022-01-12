@@ -15,5 +15,11 @@
         android:layout_height="wrap_content"
         android:text="새 연락처 등록하기" />
 
+    <Button
+        android:id="@+id/btnGetAllContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="연락처 목록 조회" />
+
 
 </LinearLayout>
