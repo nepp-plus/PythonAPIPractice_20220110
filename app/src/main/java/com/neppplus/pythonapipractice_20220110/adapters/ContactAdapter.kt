@@ -19,8 +19,15 @@ class ContactAdapter(
 
     inner class MyViewHolder(val row: View) : RecyclerView.ViewHolder(row) {
 
+        val txtName = row.findViewById<TextView>(R.id.txtName)
+        val txtPhoneNum = row.findViewById<TextView>(R.id.txtPhoneNum)
+        val txtMemo = row.findViewById<TextView>(R.id.txtMemo)
 
         fun bind(data: ContactData) {
+
+            txtName.text = data.name
+            txtPhoneNum.text = data.phoneNum
+            txtMemo.text = data.memo
 
         }
 
