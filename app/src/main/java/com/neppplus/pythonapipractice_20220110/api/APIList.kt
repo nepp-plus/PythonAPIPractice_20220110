@@ -28,4 +28,9 @@ interface APIList {
         @Query("memo") memo: String,
     ) : Call<BasicResponse>
 
+    @GET("/get_contacts")
+    fun getRequestContactList(
+        @Query("user_id") userId: Int,
+    ) : Call<BasicResponse>
+
 }
