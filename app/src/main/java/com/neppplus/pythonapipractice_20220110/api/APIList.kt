@@ -19,4 +19,13 @@ interface APIList {
         @Query("nick") nick: String,
     ) : Call<BasicResponse>
 
+
+    @GET("/add_contact")
+    fun getRequestAddContact(
+        @Query("user_id") userId: Int,
+        @Query("name") name: String,
+        @Query("phone") phone: String,
+        @Query("memo") memo: String,
+    ) : Call<BasicResponse>
+
 }
