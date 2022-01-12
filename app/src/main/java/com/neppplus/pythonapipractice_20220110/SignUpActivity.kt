@@ -40,6 +40,8 @@ class SignUpActivity : BaseActivity() {
                             "${signUpUser.nickname} 님 회원가입을 축하합니다!",
                             Toast.LENGTH_SHORT
                         ).show()
+
+                        finish()
                     }
                     else {
 //                        서버가 400 등의 실패 코드를 준 경우.

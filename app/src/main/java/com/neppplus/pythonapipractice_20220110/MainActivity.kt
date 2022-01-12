@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import com.neppplus.pythonapipractice_20220110.models.BasicResponse
 import kotlinx.android.synthetic.main.activity_main.*
+import org.json.JSONObject
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -41,6 +42,13 @@ class MainActivity : BaseActivity() {
                             "${br.data.user.nickname}님 환영합니다!",
                             Toast.LENGTH_SHORT
                         ).show()
+
+                    }
+                    else {
+
+                        val jsonObj = JSONObject( response.errorBody()!!.string() )
+
+                        Toast.makeText(mContext, jsonObj.getString("message"), Toast.LENGTH_SHORT).show()
 
                     }
 
