@@ -2,6 +2,7 @@ package com.neppplus.pythonapipractice_20220110
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.neppplus.pythonapipractice_20220110.utils.ContextUtil
 import kotlinx.android.synthetic.main.activity_edit_contact.*
 
 class EditContactActivity : BaseActivity() {
@@ -16,7 +17,10 @@ class EditContactActivity : BaseActivity() {
             val inputMemo = edtMemo.text.toString()
 
             apiList.getRequestAddContact(
-
+                ContextUtil.getUserId(mContext),
+                inputName,
+                inputPhoneNum,
+                inputMemo
             )
 
         }
