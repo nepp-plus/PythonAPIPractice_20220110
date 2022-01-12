@@ -42,6 +42,10 @@ class LoginActivity : BaseActivity() {
                             Toast.LENGTH_SHORT
                         ).show()
 
+                        val myIntent = Intent(mContext, MainActivity::class.java)
+                        startActivity(myIntent)
+                        finish()
+
                     }
                     else {
 

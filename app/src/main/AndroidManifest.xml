@@ -13,6 +13,12 @@
         android:theme="@style/Theme.PythonAPIPractice_20220110"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".EditContactActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
             android:name=".SignUpActivity"
             android:exported="true" />
         <activity
